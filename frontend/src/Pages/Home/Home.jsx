@@ -1,4 +1,6 @@
+import AppDownload from "../../Components/AppDownload/AppDownload";
 import ExploreMenu from "../../Components/ExploreMenu/ExploreMenu";
+import FoodDisplay from "../../Components/FoodDisplay/FoodDisplay";
 import Header from "../../Components/Header/Header";
 import "./Home.css";
 import { useState } from "react";
@@ -8,6 +10,8 @@ const Home = () => {
     <div>
       <Header />
       <ExploreMenu category={category} setCategory={setCategory} />
+      <FoodDisplay category={category} />
+      <AppDownload />
     </div>
   );
 };
